@@ -28,11 +28,20 @@
 	(kel(nama Xian)(gender Perempuan)(lokasi cimahi)(pasangan Muntu)(anak Jar))
 	(kel(nama Jar)(gender Laki)(lokasi cimahi)(ortu Xian Muntu)))
 
-(deffacts wasiatmuntu
-	(wasiat(kepada Dadang)(persen 25))
-	(wasiat(kepada Ji)(persen 25))
-	(wasiat(kepada Xian)(persen 30))
-	(wasiat(kepada Jar)(persen 20)))
+(defrule kepadaortu
+	(kel(nama Muntu)(ortu $? ?ortu $?))
+	=>
+	(assert(wasiat(kepada ?ortu)(persen 25))))
+
+(defrule kepadaanak
+	(kel(nama Muntu)(anak ?anak))
+	=>
+	(assert(wasiat(kepada ?anak)(persen 20))))
+
+(defrule kepadapasangan
+	(kel(nama Muntu)(pasangan ?pasangan))
+	=>
+	(assert(wasiat(kepada ?pasangan)(persen 30))))
 
 (defrule reflexive
 	(kel(nama ?nama))
