@@ -7,7 +7,7 @@ Searching through family tree to find the grandchild, grandfather, and grandmoth
 
  - **Find the killer** ( [findthekiller.CLP](https://github.com/fauh45/CLIPS-DiscreteMath/blob/master/findthekiller.CLP "findthekiller.CLP") )
 
-Using data provided, find the one who kills muntu
+Using data provided, find the one who kills one of the cipali crew, using input, also shows who got the killed mans wealth
 
  - **Find Gender and Health** ( [findwomenandman.CLP](https://github.com/fauh45/CLIPS-DiscreteMath/blob/master/findwomenandman.CLP "findwomenandman.CLP") )
 
